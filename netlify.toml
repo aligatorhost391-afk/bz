@@ -1,0 +1,13 @@
+[build]
+  # Perintah untuk memasak website
+  command = "hugo --gc --minify"
+  # Folder yang harus disajikan ke pengunjung (WAJIB PUBLIC)
+  publish = "public"
+
+[build.environment]
+  # Hugo Stack butuh versi baru
+  HUGO_VERSION = "0.121.2"
+  # Agar Hugo tahu ini mode production
+  HUGO_ENV = "production"
+  # Menambah memory limit agar tidak crash
+  GO_VERSION = "1.21"
